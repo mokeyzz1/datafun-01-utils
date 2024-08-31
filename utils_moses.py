@@ -40,14 +40,22 @@ has_international_clients: bool = True
 years_in_operation: int = 10
 skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.73]
+is_pet_friendly: bool = False
+number_of_employees: int = 50
+programming_languages: list = ["Python", "R", "SQL"]
+recent_scores: list = [95, 88, 92, 90, 97]
 
 # Calculate statistics for client satisfaction scores
-min_score = min(client_satisfaction_scores)
-max_score = max(client_satisfaction_scores)
-mean_score = statistics.mean(client_satisfaction_scores)
-stdev_score = statistics.stdev(client_satisfaction_scores)
+min_score = float = min(client_satisfaction_scores)
+max_score = float = max(client_satisfaction_scores)
+mean_score = float = statistics.mean(client_satisfaction_scores)
+stdev_score = float = statistics.stdev(client_satisfaction_scores)
 
-
+# Calculate statistics for recent scores
+min_score = min(recent_scores)
+max_score = max(recent_scores)
+mean_score = statistics.mean(recent_scores)
+stdev_score = statistics.stdev(recent_scores)
 
 byline = f"""
 Quantum Leap: Delivering Professional Insights
@@ -56,10 +64,21 @@ Has International Clients: {has_international_clients}
 Years in Operation: {years_in_operation}
 Skills Offered: {skills_offered}
 Client Satisfaction Scores: {client_satisfaction_scores}
+Is pet friendly: {is_pet_friendly}
+Programming Languages: {programming_languages}
+Number of employees: {number_of_employees}
+Recent Score: {recent_scores}
 Minimum Satisfaction Score:    {min_score}
 Maximum Satisfaction Score:    {max_score}
 Mean Satisfaction Score:       {mean_score:.2f}
 Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
+
+Recent Scores Statistics:
+Minimum Score: {min_score:.2f}
+Maximum Score: {max_score:.2f}
+Mean Score: {mean_score:.2f}
+Standard Deviation: {stdev_score:.2f}
+
 """
 
 ####################################
