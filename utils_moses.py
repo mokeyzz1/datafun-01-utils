@@ -29,10 +29,24 @@ I'll test it in an online interpreter to ensure this version runs correctly befo
 #####################################
 
 byline: str = "Quantum Leap: Delivering Professional Insights"
+
+
+
+import statistics
+
+
+
 has_international_clients: bool = True
 years_in_operation: int = 10
 skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
 client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.73]
+
+# Calculate statistics for client satisfaction scores
+min_score = min(client_satisfaction_scores)
+max_score = max(client_satisfaction_scores)
+mean_score = statistics.mean(client_satisfaction_scores)
+stdev_score = statistics.stdev(client_satisfaction_scores)
+
 
 
 byline = f"""
@@ -42,6 +56,10 @@ Has International Clients: {has_international_clients}
 Years in Operation: {years_in_operation}
 Skills Offered: {skills_offered}
 Client Satisfaction Scores: {client_satisfaction_scores}
+Minimum Satisfaction Score:    {min_score}
+Maximum Satisfaction Score:    {max_score}
+Mean Satisfaction Score:       {mean_score:.2f}
+Standard Deviation of Satisfaction Scores: {stdev_score:.2f}
 """
 
 ####################################
