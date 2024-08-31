@@ -28,7 +28,21 @@ I'll test it in an online interpreter to ensure this version runs correctly befo
 # Declare a global variable named byline.
 #####################################
 
-byline: str = 'Quantum Leap: Delivering Professional Insights'
+byline: str = "Quantum Leap: Delivering Professional Insights"
+has_international_clients: bool = True
+years_in_operation: int = 10
+skills_offered: list = ["Data Analysis", "Machine Learning", "Business Intelligence"]
+client_satisfaction_scores: list = [4.8, 4.6, 4.9, 5.0, 4.73]
+
+
+byline = f"""
+Quantum Leap: Delivering Professional Insights
+
+Has International Clients: {has_international_clients}
+Years in Operation: {years_in_operation}
+Skills Offered: {skills_offered}
+Client Satisfaction Scores: {client_satisfaction_scores}
+"""
 
 ####################################
 # Define the get_byline() Function
