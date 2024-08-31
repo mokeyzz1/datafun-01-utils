@@ -30,10 +30,18 @@ I'll test it in an online interpreter to ensure this version runs correctly befo
 
 byline: str = 'Quantum Leap: Delivering Professional Insights'
 
+####################################
+# Define the get_byline() Function
+###################################
+
+def get_byline() -> str:
+    """ Return the byline for my analytics project. """
+    return byline 
+
 #####################################
 # Define a main() function for this module.
 #####################################
-
+    
 # Create a function named main.
 # A function is a block of code that performs a specific task.
 # This function will simply print the byline to the console.
@@ -45,7 +53,7 @@ byline: str = 'Quantum Leap: Delivering Professional Insights'
 
 def main() -> None:
     '''Print the byline to the console when this function is called.'''
-    print(byline)
+    print(get_byline())
 
 #####################################
 # Conditional Execution - Only call main() when executing this module as a script.
